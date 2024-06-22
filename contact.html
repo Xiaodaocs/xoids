@@ -1,0 +1,35 @@
+<!-- contact.html 示例 -->
+<!DOCTYPE html>
+<html lang="zh">
+<link rel="stylesheet" href="style.css"> <!-- 引入CSS样式 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的账户</title>
+</head>
+<body>
+    <header>
+        <h1>刘 亦 洲 总 站 - 账户</h1>
+    </header>
+    <nav>
+        <a href="xoid.html" class="article-excerpt">首页</a>
+        <a href="about.html" class="article-excerpt">公告</a>
+        <a href="#" class="article-excerpt">你</a>
+    </nav>
+    <h2>账户</h2>
+    <form id="contactForm">
+        <label for="name">姓名:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">邮箱:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">您的消息:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+        
+        <button type="submit">提交</button>
+    </form>
+    
+    <script src="contact-form.js"></script> <!-- 引入处理表单的JS -->
+</body>
+</html>
