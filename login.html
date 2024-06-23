@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- 引入Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 自定义样式 */
+        .overlay-section {
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+            color: white; /* 文本白色 */
+            padding: 50px; /* 内边距 */
+            min-height: 400px; /* 最小高度，可根据需要调整 */
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        /* 导航栏样式 */
+        .navbar-custom {
+            background-color: #333; /* 导航栏背景色 */
+        }
+        .navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+            color: white; /* 导航栏文本颜色 */
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <a class="navbar-brand" href="#">刘亦洲总站</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="xoid.html">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">公告</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">账户</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manhua.html">漫画角</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 主体内容 -->
+<main role="main">
+    <!-- 半透明板块 -->
+    <section class="overlay-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">欢迎来到刘亦洲的世界</h1>
+            <p class="lead intro-text">刘亦洲是一名学生，皆在研发编程教学和各种探索。此网站是他的一个作品。</p>
+            <a href="xoid.html" class="btn btn-primary btn-lg mt-4">开始体验</a>
+        </div>
+    </section>
+    
+    <!-- 简洁专业的介绍文本 -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>网站简介</h2>
+                <p class="lead">此网站可以让你看到作业，有各种小功能且将来会有刘亦洲的漫画可看。</p>
+                <!-- 这里可以继续添加更多的介绍内容 -->
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- 引入Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
