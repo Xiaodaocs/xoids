@@ -2,6 +2,89 @@
 <!DOCTYPE html>
 <html lang="zh">
 <link rel="stylesheet" href="style.css"> <!-- 引入CSS样式 -->
+<meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+    /* 自定义样式 */
+    .overlay-section {
+        background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+        color: white; /* 文本白色 */
+        padding: 50px; /* 内边距 */
+        min-height: 400px; /* 最小高度，可根据需要调整 */
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    /* 导航栏样式 */
+    .navbar-custom {
+        background-color: #333; /* 导航栏背景色 */
+    }
+    .navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+        color: white; /* 导航栏文本颜色 */
+    }
+</style>
+    <style>
+        /* 基础字体设置 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #505050;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 主要容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 标题样式 */
+        h1, h2, h3 {
+            font-weight: bold;
+            line-height: 1.2;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        /* 段落间距 */
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* 表单美化 */
+        form {
+            margin-top: 40px;
+        }
+        
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        button, input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover, input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +94,27 @@
     <header>
         <h1>刘 亦 洲 总 站 - 账户</h1>
     </header>
-    <nav>
-        <a href="xoid.html" class="article-excerpt">首页</a>
-        <a href="about.html" class="article-excerpt">公告</a>
-        <a href="#" class="article-excerpt">你</a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#">刘亦洲总站</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="xoid.html">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">公告</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">账户</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="manhua.html">漫画角</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <h2>账户</h2>
     <form id="contactForm">
